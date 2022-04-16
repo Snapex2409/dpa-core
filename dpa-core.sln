@@ -4,6 +4,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dpa-core", "dpa-core.vcxproj", "{39634550-26CF-4827-888C-4128482D3294}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A8AF44DC-627C-4492-880E-2745C88FFD18} = {A8AF44DC-627C-4492-880E-2745C88FFD18}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{8A41ED04-6539-49B6-896A-0E8C9635629A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dpa-common", "dpa-common\dpa-common.vcxproj", "{A8AF44DC-627C-4492-880E-2745C88FFD18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +28,20 @@ Global
 		{39634550-26CF-4827-888C-4128482D3294}.Release|x64.Build.0 = Release|x64
 		{39634550-26CF-4827-888C-4128482D3294}.Release|x86.ActiveCfg = Release|Win32
 		{39634550-26CF-4827-888C-4128482D3294}.Release|x86.Build.0 = Release|Win32
+		{A8AF44DC-627C-4492-880E-2745C88FFD18}.Debug|x64.ActiveCfg = Debug|x64
+		{A8AF44DC-627C-4492-880E-2745C88FFD18}.Debug|x64.Build.0 = Debug|x64
+		{A8AF44DC-627C-4492-880E-2745C88FFD18}.Debug|x86.ActiveCfg = Debug|Win32
+		{A8AF44DC-627C-4492-880E-2745C88FFD18}.Debug|x86.Build.0 = Debug|Win32
+		{A8AF44DC-627C-4492-880E-2745C88FFD18}.Release|x64.ActiveCfg = Release|x64
+		{A8AF44DC-627C-4492-880E-2745C88FFD18}.Release|x64.Build.0 = Release|x64
+		{A8AF44DC-627C-4492-880E-2745C88FFD18}.Release|x86.ActiveCfg = Release|Win32
+		{A8AF44DC-627C-4492-880E-2745C88FFD18}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8AF44DC-627C-4492-880E-2745C88FFD18} = {8A41ED04-6539-49B6-896A-0E8C9635629A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51E7B278-8641-41BC-80DF-693F84DEAEF1}
